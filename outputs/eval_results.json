@@ -1,0 +1,93 @@
+[
+  {
+    "key": "rockstar",
+    "lang": "en",
+    "artist": "Post Malone",
+    "title": "rockstar",
+    "hyp": "outputs/dataset__unbake-vocals__en__Post_Malone_&_21_Savage_-_rockstar.prediction.json",
+    "wer": 0.3243,
+    "cer": 0.2396,
+    "ref_words": 515,
+    "hyp_words": 427,
+    "ref_chars": 2492,
+    "hyp_chars": 2066
+  },
+  {
+    "key": "bellakeo",
+    "lang": "es",
+    "artist": "Peso Pluma",
+    "title": "BELLAKEO",
+    "hyp": "outputs/dataset__unbake-vocals__es__Peso_Pluma_&_Anitta_-_BELLAKEO.prediction.json",
+    "wer": 0.7525,
+    "cer": 0.6108,
+    "ref_words": 396,
+    "hyp_words": 216,
+    "ref_chars": 2220,
+    "hyp_chars": 1065
+  },
+  {
+    "key": "bruce_wayne",
+    "lang": "es",
+    "artist": "Peso Pluma",
+    "title": "BRUCE WAYNE",
+    "hyp": "outputs/dataset__unbake-vocals__es__Peso_Pluma_-_BRUCE_WAYNE.prediction.json",
+    "wer": 0.3951,
+    "cer": 0.2898,
+    "ref_words": 243,
+    "hyp_words": 193,
+    "ref_chars": 1211,
+    "hyp_chars": 953
+  },
+  {
+    "key": "solicitado",
+    "lang": "es",
+    "artist": "Peso Pluma",
+    "title": "SOLICITADO",
+    "hyp": "outputs/dataset__unbake-vocals__es__Peso_Pluma_-_SOLICITADO.prediction.json",
+    "wer": 0.2047,
+    "cer": 0.1535,
+    "ref_words": 215,
+    "hyp_words": 197,
+    "ref_chars": 1088,
+    "hyp_chars": 976
+  },
+  {
+    "key": "place_de_la_republique",
+    "lang": "fr",
+    "artist": "Coeur de Pirate",
+    "title": "Place de la Republique",
+    "hyp": "outputs/dataset__unbake-vocals__fr__C#U0153ur_de_pirate_-_Place_de_la_Re#U0301publique.prediction.json",
+    "wer": 0.2807,
+    "cer": 0.1566,
+    "ref_words": 228,
+    "hyp_words": 218,
+    "ref_chars": 1194,
+    "hyp_chars": 1111
+  },
+  {
+    "key": "last_of_us",
+    "lang": "ru",
+    "artist": "Miyagi",
+    "title": "Last of Us",
+    "hyp": "outputs/dataset__unbake-vocals__ru__Miyagi_&_#U042d#U043d#U0434#U0448#U043f#U0438#U043b#U044c_-_Last_of_Us.prediction.json",
+    "wer": 0.253,
+    "cer": 0.1097,
+    "ref_words": 328,
+    "hyp_words": 321,
+    "ref_chars": 1741,
+    "hyp_chars": 1711
+  },
+  {
+    "key": "diko_naprimer",
+    "lang": "ru",
+    "artist": "PHARAOH",
+    "title": "Дико, например",
+    "hyp": "outputs/dataset__unbake-vocals__ru__Pharaoh_-_#U0414#U0438#U043a#U043e,_#U043d#U0430#U043f#U0440#U0438#U043c#U0435#U0440.prediction.json",
+    "wer": 0.2016,
+    "cer": 0.0992,
+    "ref_words": 258,
+    "hyp_words": 258,
+    "ref_chars": 1361,
+    "hyp_chars": 1345
+  }
+]

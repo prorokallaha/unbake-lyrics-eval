@@ -1,0 +1,79 @@
+[
+  {
+    "key": "rockstar",
+    "lang": "en",
+    "ref": "refs/rockstar.ref.txt",
+    "hyp": "outputs/dataset__unbake-vocals__en__Post_Malone_&_21_Savage_-_rockstar.prediction.json",
+    "artist": "Post Malone",
+    "title": "rockstar",
+    "lrclib_artist": "Post Malone",
+    "lrclib_track": "rockstar",
+    "has_synced": true
+  },
+  {
+    "key": "bellakeo",
+    "lang": "es",
+    "ref": "refs/bellakeo.ref.txt",
+    "hyp": "outputs/dataset__unbake-vocals__es__Peso_Pluma_&_Anitta_-_BELLAKEO.prediction.json",
+    "artist": "Peso Pluma",
+    "title": "BELLAKEO",
+    "lrclib_artist": "Peso Pluma",
+    "lrclib_track": "BELLAKEO",
+    "has_synced": true
+  },
+  {
+    "key": "bruce_wayne",
+    "lang": "es",
+    "ref": "refs/bruce_wayne.ref.txt",
+    "hyp": "outputs/dataset__unbake-vocals__es__Peso_Pluma_-_BRUCE_WAYNE.prediction.json",
+    "artist": "Peso Pluma",
+    "title": "BRUCE WAYNE",
+    "lrclib_artist": "Peso Pluma",
+    "lrclib_track": "BRUCE WAYNE",
+    "has_synced": false
+  },
+  {
+    "key": "solicitado",
+    "lang": "es",
+    "ref": "refs/solicitado.ref.txt",
+    "hyp": "outputs/dataset__unbake-vocals__es__Peso_Pluma_-_SOLICITADO.prediction.json",
+    "artist": "Peso Pluma",
+    "title": "SOLICITADO",
+    "lrclib_artist": "Peso Pluma",
+    "lrclib_track": "SOLICITADO",
+    "has_synced": true
+  },
+  {
+    "key": "place_de_la_republique",
+    "lang": "fr",
+    "ref": "refs/place_de_la_republique.ref.txt",
+    "hyp": "outputs/dataset__unbake-vocals__fr__C#U0153ur_de_pirate_-_Place_de_la_Re#U0301publique.prediction.json",
+    "artist": "Coeur de Pirate",
+    "title": "Place de la Republique",
+    "lrclib_artist": "Coeur de pirate",
+    "lrclib_track": "Place de la République",
+    "has_synced": true
+  },
+  {
+    "key": "last_of_us",
+    "lang": "ru",
+    "ref": "refs/last_of_us.ref.txt",
+    "hyp": "outputs/dataset__unbake-vocals__ru__Miyagi_&_#U042d#U043d#U0434#U0448#U043f#U0438#U043b#U044c_-_Last_of_Us.prediction.json",
+    "artist": "Miyagi",
+    "title": "Last of Us",
+    "lrclib_artist": "MiyaGi & Endspiel",
+    "lrclib_track": "Last of us",
+    "has_synced": true
+  },
+  {
+    "key": "diko_naprimer",
+    "lang": "ru",
+    "ref": "refs/diko_naprimer.ref.txt",
+    "hyp": "outputs/dataset__unbake-vocals__ru__Pharaoh_-_#U0414#U0438#U043a#U043e,_#U043d#U0430#U043f#U0440#U0438#U043c#U0435#U0440.prediction.json",
+    "artist": "PHARAOH",
+    "title": "Дико, например",
+    "lrclib_artist": "PHARAOH",
+    "lrclib_track": "Дико, например",
+    "has_synced": false
+  }
+]
