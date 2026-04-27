@@ -77,6 +77,12 @@ python batch_transcribe.py
 python eval_mapping.py
 ```
 
+## Design proposal
+
+Короткий design API и архитектурное решение:
+
+[DESIGN.md](./DESIGN.md)
+
 ## Ограничения
 
 - Аудио из предоставленного датасета не добавлено в репозиторий.
