@@ -1,6 +1,6 @@
 # Unbake Lyrics Sync Baseline Eval
 
-Практический baseline-прогон для тестового задания Unbake Lyrics Sync API.
+Практический baseline-прогон для тестового задания **Unbake Lyrics Sync API**.
 
 Цель – проверить, как `faster-whisper large-v3` работает на vocal stems, отделённых через `htdemucs v4`, и получить первые реальные цифры по latency, cost и качеству текста.
 
@@ -15,6 +15,15 @@
 - Суммарное время транскрибации: ~154.95 sec
 - Среднее время на трек: ~17.22 sec
 - Raw GPU cost на трек: ~$0.0021 при $0.44/hour
+
+## Что было сделано
+
+1. Поднят GPU pod на RunPod.
+2. Установлены `faster-whisper`, `ffmpeg`, `jiwer`, `rapidfuzz`.
+3. Запущен batch-прогон по всем 9 `.m4a` vocal stems.
+4. Для 7 / 9 треков автоматически подтянуты reference lyrics из LRCLIB.
+5. Посчитаны WER/CER.
+6. Отдельно отмечены ограничения такой оценки.
 
 ## Метрики
 
@@ -52,3 +61,39 @@ Reference lyrics были автоматически подтянуты из LRC
 ├── outputs_txt/
 └── refs/
     └── mapping.json
+```
+
+## Что запускалось
+
+Основной batch-прогон:
+
+```bash
+python batch_transcribe.py
+```
+
+Оценка WER/CER по найденным reference lyrics:
+
+```bash
+python eval_mapping.py
+```
+
+## Ограничения
+
+- Аудио из предоставленного датасета не добавлено в репозиторий.
+- LRCLIB используется только как быстрый reference source, а не как идеальный ground truth.
+- Timestamp MAE не вынесен как финальная метрика, потому что в датасете нет ручной word-level разметки.
+- BELLAKEO отмечен как outlier из-за возможного mismatch между LRCLIB lyrics и фактическим vocal stem.
+
+## Вывод
+
+`faster-whisper large-v3` как self-hosted baseline работает достаточно быстро и дёшево для MVP, но качество текста на `htdemucs v4` vocal stems нестабильное.
+
+Практический вывод: финальный pipeline лучше строить не как `Whisper only`, а как hybrid:
+
+```text
+ASR baseline
++ lyrics prior через ShazamKit/LRCLIB
++ fuzzy similarity check
++ fallback на ASR для каверов/изменённого текста
++ confidence warnings / line-level fallback для ненадёжных участков
+```
